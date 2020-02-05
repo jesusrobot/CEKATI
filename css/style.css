@@ -39,7 +39,7 @@
 }
 :root {
     --purple-color: #1B1464;
-    --purple-color-2: #041450;
+    --purple-color-2: #041450; 
     --white-color: #fff;
 }
 body{
@@ -199,8 +199,82 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*-------------------------------------------*\
-    SECTION: 
+    SECTION: REGISTRO DE EMPRESA
 \*-------------------------------------------*/
+
+.registry-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+.registry-left-container{
+    padding-left: 1.5rem;
+    background: #031451;
+    background-image: url(../assets/img/bkg-registro.png);
+    background-position: left;
+    background-size: 420px;
+    width: 70%;
+    background-repeat: no-repeat;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+}
+.registry-left-container .box-description{
+    width: 80%;
+    margin-top: 5rem;
+}
+.registry-left-container h3 {
+    font-size: 1.5rem;
+}
+.registry-left-container img {
+    width: 3.5rem;
+    margin-top: 2rem;
+}
+/* form */
+.registry-right-container{
+    width: 30%;
+    color: var(--white-color);
+    background: #2D2D30;
+}
+.form {
+    padding: 3rem 3rem;
+}
+ .form label {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+} 
+.form input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--white-color);
+    color: var(--white-color);
+    padding: 1rem;
+}
+.form input:focus{
+    outline: 0;
+}
+.form input::placeholder{
+    color: var(--white-color);
+}
+.form > :nth-child(4) {
+    margin-bottom: 3rem;
+}
+button.big-link{
+    background: none;
+    border: none;
+    /* height: 5rem; */
+    width: 70%;
+}
+button.big-link span {
+    top: 20%;
+}
+button.big-link:focus{
+    outline: 0;
+}
 
 /*-------------------------------------------*\
     SECTION: MEDIA QUERIES
@@ -252,6 +326,28 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 1rem;
         width: 90%;
     }
+
+    /* registro */
+    .registry-left-container{
+        width: 100%;
+        text-align: center;
+        height: 380px;
+    }
+    .registry-left-container .box-description{
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .registry-left-container img {
+        width: 3.5rem;
+        margin-top: 1rem;
+    }
+    .registry-right-container{
+        width: 100%;
+    }
+    button.big-link{
+        width: 70%;
+    }
+
 }
 
 /* ---------- TABLET ---------- */
@@ -265,5 +361,12 @@ h1, h2, h3, h4, h5, h6 {
     /* beneficios */
     .benefit{
         width: 45%;
+    }
+    /* registro */
+    .registry-left-container{
+        width: 50%;
+    }
+    .registry-right-container{
+        width: 50%;
     }
 }

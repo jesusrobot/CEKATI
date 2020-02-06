@@ -112,6 +112,70 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/* menu */
+
+.menu{
+    position: relative;
+}
+.menu-icon{
+    background: none;
+    border: none;
+}
+.menu-icon:focus{
+    outline: 0;
+}
+.menu .menu-options{
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    display: none;
+    background: white;
+    background: var(--purple-color-2);
+}
+.menu-options .option{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: .8rem 3.2rem .8rem 1.6rem;
+    color: var(--white-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.menu-options .option:hover{
+    background: var(--purple-color);
+}
+.menu-options > :last-child {
+    border-bottom-color: transparent;
+}
+.menu-icon.active::before{
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 10px solid var(--white-color);
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 8px);
+}
+.menu-options.active{
+    display: block; 
+    animation: fadeIn .3s forwards;
+
+ }
+
+ /* animaciones */
+
+ @keyframes fadeIn{
+    from{
+        transform:  translateY(-20px) scale(.5);
+    }
+    to{
+        transform:  translateY(0) scale(1);
+    }
+}
+
 /* ---------- HERO IMG ---------- */
 
 .hero-container{

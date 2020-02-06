@@ -312,6 +312,9 @@ button.big-link:focus{
     border-radius: 15px;
     position: relative;
 }
+.plan:hover{
+    box-shadow: -2px 8px 14px 0px rgba(0,0,0, .4);
+}
 .plan img {
     width: 65px;
     position: absolute;
@@ -404,6 +407,113 @@ button.big-link:focus{
 .video img {
     width: 10%;
 }
+
+/*-------------------------------------------*\
+    SECTION: FOOTER
+\*-------------------------------------------*/
+
+.footer-container {
+    background-image: url(../assets/img/bkg-footer.png);
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 700px; */
+}
+.phrase-container{
+    width: 50%;
+    margin: 0 auto;
+    height: 300px;
+    color: var(--white-color);
+    padding-top: 7rem;
+}
+.phrase-title, .phrase-description{
+    margin: 0;
+    text-align: center;
+}
+.phrase-title{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* links */
+
+.links-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.links-left-container{
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin: 4rem;
+    width: 50%;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    color: var(--white-color);
+    margin-right: 3rem;
+}
+.list .link {
+    color: var(--white-color);
+    text-decoration: none;
+    margin-bottom: .2rem;
+}
+
+.list a > img{
+    width: 1rem;
+}
+.list .list-title{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.links-right-container{
+    width: 25%;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+
+}
+.list-title {
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+.links-right-container .list-title{
+    text-align: left;
+}
+.app-links{
+    display: flex;
+}
+.links-right-container img{
+    width: 98%;
+}
+
+/* menu bar footer */
+
+.footer-nav{
+    padding: 2rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--white-color);
+    width: 90%;
+}
+.footer-nav .logo{
+    width: 193px;
+}
+.footer-nav a {
+    text-decoration: none;
+    color: var(--white-color);
+    margin-left: 1rem;
+}
+
 /*-------------------------------------------*\
     SECTION: MEDIA QUERIES
 \*-------------------------------------------*/
@@ -520,6 +630,53 @@ button.big-link:focus{
     .video, .text {
         width: 100%;
     }
+
+    /* footer */
+
+    .phrase-container{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 7rem;
+    }
+    .footer-container {
+        background-image: url(../assets/img/bkg-footer.png);
+        /* background-size: contain; */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .links-left-container{
+        width: 90%;
+        margin: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .list{
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    .list .list-title{
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .list .link {
+        /* font-size: .9rem; */
+        margin-bottom: .4rem;
+        text-align: center;
+    }
+    .links-right-container{
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .links-right-container .list-title{
+        text-align: center;
+    }
+    .footer-nav .logo {
+        width: 140px;
+    }
+
 }
 
 /* ---------- TABLET ---------- */

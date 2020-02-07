@@ -1,6 +1,6 @@
 jQuery(function($){
     $('.slider').sss({
-        slideShow: false,
-        transition: 0
+        slideShow: true,
+        transition: 800
     });
 })

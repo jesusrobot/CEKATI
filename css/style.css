@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu-icon{
     background: none;
     border: none;
+    cursor: pointer;
 }
 .menu-icon:focus{
     outline: 0;
@@ -136,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     display: inline-block;
     width: 100%;
-    padding: .8rem 3.2rem .8rem 1.6rem;
+    padding: .8rem 3.2rem .8rem 1.6rem !important;
     color: var(--white-color);
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
@@ -165,16 +166,72 @@ h1, h2, h3, h4, h5, h6 {
 
  }
 
- /* animaciones */
 
- @keyframes fadeIn{
-    from{
-        transform:  translateY(-20px) scale(.5);
-    }
-    to{
-        transform:  translateY(0) scale(1);
-    }
+/* idiomas */
+
+.lenguages{
+    position: relative;
 }
+.leng-icon{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.leng-icon img {
+    width: 22px;
+    height: 22px;
+}
+.leng-icon:focus{
+    outline: 0;
+}
+.leng-options{
+    position: absolute;
+    top: 55px;
+    background: var(--purple-color-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+.leng-option{
+    display: inline-block;
+    padding: .2rem .4rem .2rem .4rem;
+    margin: 0 auto;
+}
+.leng-options .leng-option img {
+    width: 22px;
+    height: 22px;
+}
+.leng-icon.active::before{
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 10px solid var(--white-color);
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 8px);
+}
+.leng-options.active{
+    display: block; 
+    animation: fadeIn .3s forwards;
+
+ }
+
+/* animaciones */
+@keyframes fadeIn{
+   from{
+       transform:  translateY(-20px) scale(.5);
+   }
+   to{
+       transform:  translateY(0) scale(1);
+   }
+}
+
 
 /* ---------- HERO IMG ---------- */
 

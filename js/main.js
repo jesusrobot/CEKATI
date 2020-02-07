@@ -30,3 +30,11 @@ lengButton.addEventListener('click', () => {
     lengOptions.classList.toggle('active');
 
 });
+
+// mostrar o ocultar la caja de busqueda
+const searchButton = document.getElementById('searchButton');
+const searchfield = document.getElementById('searchfield');
+
+searchButton.addEventListener('click', () => {
+    searchfield.classList.toggle('active');
+});

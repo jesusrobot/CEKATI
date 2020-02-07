@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .items-container.left > :nth-child(3) {
     background: var(--purple-color-2);
-    width: 10vh;
+    min-width: 10vh;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -188,6 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 .leng-options{
     position: absolute;
     top: 55px;
+    left: -5px;
     background: var(--purple-color-2);
     display: flex;
     flex-direction: column;
@@ -222,7 +223,36 @@ h1, h2, h3, h4, h5, h6 {
 
  }
 
+
+/* searchbox */
+.search-box-container{
+    position: relative;
+    padding: 0 1rem;
+}
+.search-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.search-button:focus{
+    outline: 0;
+}
+.search-box{
+    height: 50%;
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    padding: .2rem .5rem;
+    color: var(--white-color);
+    display: none;
+}
+.search-box.active{
+    display: block;
+    animation: in .3s forwards;
+
+}
+
 /* animaciones */
+
 @keyframes fadeIn{
    from{
        transform:  translateY(-20px) scale(.5);
@@ -231,6 +261,17 @@ h1, h2, h3, h4, h5, h6 {
        transform:  translateY(0) scale(1);
    }
 }
+
+@keyframes in{
+    from{
+        transform:  translateX(-20px) ;
+    }
+    to{
+        transform:  translateX(0);
+    }
+ }
+ 
+
 
 
 /* ---------- HERO IMG ---------- */
@@ -573,6 +614,7 @@ button.big-link:focus{
     margin-bottom: 2rem;
 }
 
+
 /* links */
 
 .links-container{
@@ -826,6 +868,37 @@ button.big-link:focus{
         width: 140px;
     }
 
+    /* search */
+
+    .search-box{
+        position: absolute;
+        top:63px;
+        left: -238px;
+        padding: 1.5rem 1.25rem;
+        background: var(--purple-color);
+
+    }
+    .search-box-container{
+        position: relative;
+        padding: 0 0rem;
+    }
+    .search-button{
+        /* position: relative; */
+        padding: 0;
+        margin: 0;
+    }
+    .items-container.left > :nth-child(3) {
+        background: var(--purple-color-2);
+        min-width: 2vh;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .items-container.right > :nth-child(2) {
+        margin-left: .4rem;
+        padding-right: .5rem;
+    }
 }
 
 /* ---------- TABLET ---------- */
@@ -908,5 +981,16 @@ button.big-link:focus{
     }
     .video, .text {
         width: 100%;
+    }
+
+    /* search */
+
+    .search-box{
+        position: absolute;
+        top:75px;
+        left: -200px;
+        padding: 1.5rem;
+        background: var(--purple-color);
+
     }
 }

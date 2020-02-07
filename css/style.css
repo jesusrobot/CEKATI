@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     background: white;
     background: var(--purple-color-2);
+    z-index: 100;
 }
 .menu-options .option{
     text-decoration: none;
@@ -194,6 +195,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     display: none;
+    z-index: 100;
+
 }
 .leng-option{
     display: inline-block;
@@ -244,6 +247,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: .2rem .5rem;
     color: var(--white-color);
     display: none;
+    z-index: 100;
 }
 .search-box.active{
     display: block;

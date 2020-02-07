@@ -3,4 +3,4 @@ jQuery(function($){
         slideShow: true,
         transition: 800
     });
-})
+});

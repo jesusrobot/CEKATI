@@ -38,3 +38,11 @@ const searchfield = document.getElementById('searchfield');
 searchButton.addEventListener('click', () => {
     searchfield.classList.toggle('active');
 });
+
+// para mostrar o ocultar el menu
+const userButton = document.getElementById('userButton');
+const useroptions = document.getElementById('userOptions');
+userButton.addEventListener('click', () => {
+    userButton.classList.toggle('active');
+    useroptions.classList.toggle('active');
+});

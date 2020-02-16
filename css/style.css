@@ -255,6 +255,63 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/* user */
+
+.user{
+    position: relative;
+}
+.user-icon{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.user-icon:focus{
+    outline: 0;
+}
+.user .user-options{
+    width: 157px;
+    position: absolute;
+    top: 62px;
+    left: -100px;
+    display: none;
+    background: white;
+    background: var(--purple-color-2);
+    z-index: 100;
+}
+.user-options .user-option{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: .8rem .1rem .8rem .5rem !important;
+    color: var(--white-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.user-options .option:hover{
+    background: var(--purple-color);
+}
+.user-options > :last-child {
+    border-bottom-color: transparent;
+}
+.user-icon.active::before{
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 10px solid var(--white-color);
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    position: absolute;
+    z-index: 300;
+    bottom: -18px;
+    left: calc(50% - 16px);
+}
+.user-options.active{
+    display: block; 
+    animation: fadeIn .3s forwards;
+
+ }
+
 /* animaciones */
 
 @keyframes fadeIn{
@@ -995,6 +1052,5 @@ button.big-link:focus{
         left: -200px;
         padding: 1.5rem;
         background: var(--purple-color);
-
     }
 }

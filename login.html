@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="assets/libraries/sss/sss.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+    <!-- SECTION: HEADER -->
+    <Header>
+        <!-- Navbar -->
+        <nav class="nav-bar">
+            <div class="items-container left">
+                <div class="nav-item">
+                    <img src="assets/img/logo.png" class="logo" alt="">
+                </div>
+                <div class="nav-item menu">
+                    <button class="menu-icon" id="menuButton">
+                        <img src="assets/icon/menu.png" alt="">
+                    </button>
+                    <nav class="menu-options" id="options">
+                        <a href="#" class="option">Home</a>
+                        <a href="#" class="option">Productos</a>
+                        <a href="#" class="option">Precios</a>
+                        <a href="#" class="option">About</a>
+                        <a href="#" class="option">Contacto</a>
+                    </nav>
+                </div>
+                <div class="nav-item search-box-container">
+                    <button class="search-button" id="searchButton">
+                        <img src="assets/icon/loupe.png" class="loupe" ="search button">
+                    </button>                    
+                    <input type="search" name="" id="searchfield" class="search-box" placeholder="Buscar...">
+                </div>
+            </div>
+            <div class="items-container right">
+                <div class="nav-item lenguages">
+                    <button class="leng-icon" id="lengButton">
+                        <img src="assets/icon/leng.png" alt="">
+                    </button>                    
+                    <nav class="leng-options" id="lengOptions">
+                        <a href="#" class="leng-option"><img src="assets/icon/leng.png" alt=""></a>
+                        <a href="#" class="leng-option"><img src="assets/icon/uk.png" alt=""></a>
+                        <a href="#" class="leng-option"><img src="assets/icon/france.png" alt=""></a>
+                        <a href="#" class="leng-option"><img src="assets/icon/germany.png" alt=""></a>
+                    </nav>
+                </div>
+                <div class="nav-item user">
+                    <button class="user-icon" id="userButton">
+                        <img src="assets/icon/user.png" alt="">
+                    </button>
+                    <nav class="user-options" id="userOptions">
+                        <a href="login.html" class="user-option">Iniciar secion</a>
+                        <a href="#" class="user-option">Cuenta</a>
+                        <a href="#" class="user-option">Salir</a>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </Header>
+    <!-- SECTION: LOGIN -->
+    <section class="login-container">
+        <div class="left">
+            <img src="assets/img/bkg-blog.png" alt="">
+        </div>
+        <div class="right form-container">
+            <form action="">
+                <label class="title-form">Get more things done with Loggin platform.</label>
+                <lable class="description-form">Access to the most powerfull tool in the entire design and web industry</lable>
+                <div class="sections">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                </div>
+                <input type="text" placeholder="E-mail Adress">
+                <input type="text" placeholder="Password">
+                <div class="actions">
+                    <button class="big-link big-btn" >
+                        <img src="assets/icon/bkg-link.png" alt=""> 
+                        <span>Login <img src="assets/icon/right.svg" alt=""></span>
+                    </button>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <a href="#" class="social-login">Or login with <b>Facebook Google Linkedin</b></a>
+            </form>
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -77,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+.mb-big{
+    margin-bottom: 6rem !important;
+}
+
 /*-------------------------------------------*\
     SECTION: HOME
 \*-------------------------------------------*/
@@ -354,14 +358,14 @@ h1, h2, h3, h4, h5, h6 {
 .form-container{
     width: 45%;
     background: var(--purple-color-2);
-    padding: 2rem 4rem;
+    padding: 4rem 6rem;
 }
 .form-container .title-form{
     color: var(--white-color);
     font-weight: 600;
     font-size: 30px;
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .form-container .description-form {
     color: var(--white-color);

@@ -458,7 +458,8 @@ h1, h2, h3, h4, h5, h6 {
 .registry-right-container{
     width: 30%;
     color: var(--white-color);
-    background: #2D2D30;
+    background: rgb(0,79,140);
+    background: linear-gradient(249deg, rgba(0,79,140,1) 0%, rgba(0,137,183,1) 72%);
 }
 .form {
     padding: 3rem 3rem;

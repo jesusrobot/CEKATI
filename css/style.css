@@ -487,19 +487,28 @@ h1, h2, h3, h4, h5, h6 {
 .form > :nth-child(4) {
     margin-bottom: 3rem;
 }
+.form .big-link span img {
+    width: 1rem;
+    height: 1.5rem;
+    margin-left: .2rem;
+}
 button.big-link{
     background: none;
     border: none;
     /* height: 5rem; */
-    width: 70%;
+    width: 100%;
+
 }
 button.big-link span {
-    top: 20%;
+    top: 30%;
+
 }
 button.big-link:focus{
     outline: 0;
 }
-
+.big-link > img {
+    /* displa: none; */
+}
 
 /*-------------------------------------------*\
     SECTION: PLANES SUBSCRIPTORES
@@ -558,7 +567,6 @@ button.big-link:focus{
 /*-------------------------------------------*\
     SECTION: COMENTARIOS
 \*-------------------------------------------*/
-
 .comentarios-container{
     background: var(--purple-color-2);
     height: 350px;
@@ -567,11 +575,11 @@ button.big-link:focus{
 .comentarios-container .comment-name{
     color: var(--white-color);
     font-size: 1.5rem;
-    width: 50%;
+    width: 100%;
 }
 .comentarios-container .comment{
     color: var(--white-color);
-    width: 50%;
+    width: 100%;
 }
 /*-------------------------------------------*\
     SECTION: BLOG
@@ -816,7 +824,6 @@ button.big-link:focus{
     .registry-left-container{
         width: 100%;
         text-align: center;
-        height: 380px;
     }
     .registry-left-container .box-description{
         width: 100%;

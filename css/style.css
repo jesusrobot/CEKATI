@@ -55,9 +55,8 @@ body{
     position: relative;
     width: 50%;
     user-select: none;
-}
-.big-link img{
-    width: 100%;
+    background: linear-gradient(249deg, rgba(0,79,140,1) 0%, rgba(0,137,183,1) 72%);
+
 }
 .big-link span {
     position: absolute;

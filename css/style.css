@@ -64,6 +64,7 @@ body{
     left: 20%;
     color: var(--white-color);
     display: flex;
+    background: linear-gradient(249deg, rgba(0,79,140,1) 0%, rgba(0,137,183,1) 72%);
     align-items: center;
 }
 .big-link span img{

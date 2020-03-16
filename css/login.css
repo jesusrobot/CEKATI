@@ -56,16 +56,22 @@ body{
     width: 50%;
     user-select: none;
 }
-.big-link img{
+.big-link > img{
     width: 100%;
+    display: none;
 }
 .big-link span {
-    position: absolute;
-    top: 30%;
-    left: 20%;
+    /* position: absolute; */
+    /* top: 30%; */
+    /* left: 20%; */
     color: var(--white-color);
     display: flex;
     align-items: center;
+    background: linear-gradient(249deg, rgba(0,79,140,1) 0%, rgba(0,137,183,1) 72%);
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1.1rem 2rem;
+    border-radius: 50px;
 }
 .big-link span img{
     width: 2rem ;
@@ -406,7 +412,7 @@ input[type="text"]:focus{
 }
 .big-btn span{
     margin-top: -3px;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 .actions a {
     color: var(--white-color);
@@ -441,13 +447,13 @@ input[type="text"]:focus{
         padding: 1rem;
     }
     .big-link{
-        
-        width: 80%;
+        width: 60%;
     }
     .big-link span{
         top: 30%;
         left: 12%;
     }
+    
 
     /* search */
 
@@ -494,6 +500,22 @@ input[type="text"]:focus{
     }
 }
 
+
+
+@media (min-width:900px) and (max-width: 1200px) {
+    /* search */
+    .big-link span{
+        font-size: .8rem;
+        margin-left: 0;
+    }
+    .actions a {
+        font-size: .8rem;
+        
+    }
+    .big-link span img {
+        display: none;
+    }
+}
 /* ---------- TABLET ---------- */
 
 @media (min-width:493px) and (max-width: 900px) {

@@ -852,7 +852,9 @@ button.big-link:focus{
     button.big-link{
         width: 70%;
     }
-
+    button.big-link img {
+        display: none;
+    }
     /* planes */
     
     .plan{

@@ -857,9 +857,26 @@ button.big-link:focus{
     }
     /* planes */
     
-    .plan{
-        margin-bottom: 4rem;
+    .plans-content{
+        flex-direction: column;
     }
+    .plan{
+        padding-top: 1.6rem;
+        padding-bottom: 1rem;
+        width: 50%;
+        /* height: 125px; */
+        background: #f2f2f2;
+        border-radius: 15px;
+        position: relative;
+    }
+    
+    .plan img {
+        width: 65px;
+        position: absolute;
+        left: 50%;
+        top: -35px;
+    }
+
     /* comentarios */
     .comentarios-container{
         height: auto;

@@ -786,7 +786,7 @@ button.big-link:focus{
 
 /* ---------- PHONE ---------- */
 
-@media(max-width: 592px) {
+@media(max-width: 612px) {
     /* home */
 
     .items-container.left > :nth-child(3) {
@@ -852,31 +852,38 @@ button.big-link:focus{
     button.big-link{
         width: 70%;
     }
-    button.big-link img {
-        display: none;
-    }
+
     /* planes */
-    
     .plans-content{
+        display: flex;
+        /* flex-wrap: wrap; */
         flex-direction: column;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    .plan{
+        margin: auto;
+        margin-bottom: 6rem;
+        transform: scale(1.1);
     }
     .plan{
         padding-top: 1.6rem;
         padding-bottom: 1rem;
-        width: 50%;
+        width: 190px;
         /* height: 125px; */
         background: #f2f2f2;
         border-radius: 15px;
         position: relative;
     }
-    
+    .plan:hover{
+        box-shadow: -2px 8px 14px 0px rgba(0,0,0, .4);
+    }
     .plan img {
         width: 65px;
         position: absolute;
-        left: 50%;
+        left: 33%;
         top: -35px;
     }
-
     /* comentarios */
     .comentarios-container{
         height: auto;
